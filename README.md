@@ -1,11 +1,9 @@
 # koxo-log-formatter
 
-Application pour reformatter les logs ayant été génerés via l'outil KoXo Log Sessions, voir: [koxo.net](https://koxo.net/). Retire l'en tête et les lignes "LOGOFF".
-Son but est d'avoir des données plus exploitables et surtout plus rapidement pour ensuite les lire/trier dans un tableur.
-Pour par exemple, verifier les dates de dernières connexions sur un poste.
+## EN
+Application to reformat logs that have been generated via the KoXo Log Sessions tool, see: [koxo.net](https://koxo.net/).
+Its purpose is to have more usable data in order to read/sort them in a spreadsheets.
 
-## Utilisation
-Lancez l'application puis sélectionnez le dossier contenant les logs. 
-Un nouveau dossier sera créé avec le nom "formatted-logs" contenant tous les fichiers reformattés.
-Chaque fichier valide est reformatté et porte le même nom que l'original.
-Un fichier nommé "combined" avec tous les logs reformattés est également créé.
+## FR
+Application pour reformatter les logs ayant été génerés via l'outil KoXo Log Sessions, voir: [koxo.net](https://koxo.net/).
+Son but est d'avoir des données plus exploitables afin les lire/trier dans un tableur.
