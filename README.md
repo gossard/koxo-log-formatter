@@ -6,4 +6,4 @@ Its purpose is to have more usable data in order to read/sort them in a spreadsh
 
 ## FR
 Application pour reformatter les logs ayant été génerés via l'outil KoXo Log Sessions, voir: [koxo.net](https://koxo.net/).
-Son but est d'avoir des données plus exploitables afin les lire/trier dans un tableur.
+Son but est d'avoir des données plus exploitables afin de les lire/trier dans un tableur.
