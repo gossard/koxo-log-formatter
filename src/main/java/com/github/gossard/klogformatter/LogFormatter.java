@@ -44,8 +44,7 @@ public class LogFormatter {
 			numFormattedFiles++;
 		}
 		if (!allLines.isEmpty()) {
-			// TODO: if the extension is lower-case it becomes upper-case, see this
-			File combinedFile = new File(dstDir, "combined." + format.getUpperCaseExtension());
+			File combinedFile = new File(dstDir, "combined." + format.getExtension());
 			Files.write(combinedFile.toPath(), allLines, StandardOpenOption.CREATE);
 		}
 		return numFormattedFiles;

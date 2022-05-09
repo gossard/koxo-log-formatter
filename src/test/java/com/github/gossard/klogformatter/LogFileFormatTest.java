@@ -15,8 +15,8 @@ class LogFileFormatTest {
 
 	@Test
 	void create() {
-		LogFileFormat format = new LogFileFormat("LOG", 6, "#####", "[LOGOFF]");
-		assertEquals("LOG", format.getUpperCaseExtension());
+		LogFileFormat format = new LogFileFormat("log", 6, "#####", "[LOGOFF]");
+		assertEquals("log", format.getExtension());
 		assertEquals(6, format.getNumHeaderLines());
 		assertEquals("#####", format.getHeaderStartsWith());
 		assertEquals("[LOGOFF]", format.getLogOffPrefix());

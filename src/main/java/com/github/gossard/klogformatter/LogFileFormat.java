@@ -5,20 +5,20 @@ import java.util.List;
 
 public class LogFileFormat {
 
-	private final String upperCaseExtension;
+	private final String extension;
 	private final int numHeaderLines;
 	private final String headerStartsWith;
 	private final String logOffPrefix;
 
-	public LogFileFormat(String upperCaseExtension, int numHeaderLines, String headerStartsWith, String logOffPrefix) {
-		this.upperCaseExtension = upperCaseExtension;
+	public LogFileFormat(String extension, int numHeaderLines, String headerStartsWith, String logOffPrefix) {
+		this.extension = extension;
 		this.numHeaderLines = numHeaderLines;
 		this.headerStartsWith = headerStartsWith;
 		this.logOffPrefix = logOffPrefix;
 	}
 
 	public boolean isLogFile(File file) {
-		return file.getName().toUpperCase().endsWith("." + upperCaseExtension);
+		return file.getName().toUpperCase().endsWith("." + extension.toUpperCase());
 	}
 
 	public boolean hasHeader(List<String> lines) {
@@ -27,8 +27,8 @@ public class LogFileFormat {
 		return lines.get(0).startsWith(headerStartsWith);
 	}
 
-	public String getUpperCaseExtension() {
-		return upperCaseExtension;
+	public String getExtension() {
+		return extension;
 	}
 
 	public int getNumHeaderLines() {
